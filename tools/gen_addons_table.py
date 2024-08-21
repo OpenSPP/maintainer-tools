@@ -132,7 +132,7 @@ def gen_addons_table(commit, readme_path, addons_dir):
             addon_paths.append((addon_path, True))
     addon_paths = sorted(addon_paths, key=lambda x: x[0])
     # load manifests
-    header = ("addon", "version", "maintainers", "summary")
+    header = ("addon", "summary")
     rows_available = []
     rows_unported = []
     for addon_path, unported in addon_paths:
